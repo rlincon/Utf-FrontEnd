@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de HTML e CSS</title>
+</head>
+
+<style>
+    body {
+        margin: 2%;
+    }
+
+    img {
+        width: 500px;
+        height: 300px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1> Meu Site! </h1>
+        <aside>
+            <nav>
+                <ul>
+                    <li> Home </li>
+                    <li> Buscar </li>
+                </ul>
+            </nav>
+        </aside>
+    </header>
+
+    <main>
+        <h1> Titulo 1 - tag < h1> </h1>
+        <h2> Titulo 2 - < h2>     </h2>
+        <h3> Titulo 3 - < h3>     </h3>
+        <h4> Titulo 4 - < h4>     </h4>
+        <h5> Titulo 5 - < h5>     </h5>
+        <h6> Titulo 6 - < h6>     </h6>
+        <strong> Texto em Negrito usando tag < strong></strong>
+        <p> Texto Normal - parágrafo tag < p> </p>
+        <b> Texto Negrito usando tag < b></b>
+        <p> Usar tag < em> quando for demarcar texto em outro idioma ex: <em> English Test </em> </p>
+        <p> Usando Tag < li> para colocar texto em listas.</p>
+        
+                <div>
+                    <section>
+                        <ul>
+                            <p> Lista NÃO ordenada (BOLINHAS) </p>
+                            <li> <s> Tag < s> texto "tachado"</s></li>
+                            <li> <i> Tag < i> </i>Texto Italico </i> </li>
+                            <li> <u> Tag < u> </u>Texto sublinhado </u> </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <ol>
+                            <p> Lista ORDENADA (NUMERADA)</p>
+                            <li> <s> Tag < s> texto "tachado"</s></li>
+                            <li> <i> Tag < i> </i>Texto Italico </i> </li>
+                            <li> <u> Tag < u> </u>Texto sublinhado </u> </li>
+                        </ol>
+                    </section>
+                </div>
+
+        
+        <p> Tag < span> serve para marcar texto, <span style="background-color: aqua;"> marcador de texto no papel.</span>
+        só nao pode esquecer de estilizar a tag para cor desejada</p>
+        <p> 2<sup>3</sup>= 8</p>
+        <p> H<sub>2</sub>O é o símbolo da água.</p>
+        <p> Abaixo usaremos a tag < img> para carregar uma imagem.</p>
+        <img src="https://www.kali.org/wallpapers/images/2025/kali-waves.png" alt="Imagem Background Kali Linux">
+        <br>
+        <p> Agora a seguir verá um link (texto fica grifado) usando a tag < a> para quando você clicar ir para outra
+                página
+                -->
+                <a href="https://www.kali.org/wallpapers/"> Clique aqui para ver outras imagens </a> </p>
+        <br>
+        <p> Agora a seguir verá um link (texto fica grifado) usando a tag < a> para quando você clicar ir para outra
+                página
+                -->
+                <a href="https://www.kali.org/wallpapers/" target="_blank"> Clique aqui abrir em uma NOVA ABA do
+                    navegador</a> - nesse caso usamos o comando "target" dentro da tag img para obrigar o navegador
+                abrir
+                uma nova ABA. </p>
+
+        <section>
+            <h2> Formulário</h2>
+            <form>
+                    <input type="checkbox">
+                    <input type="checkbox">
+
+                    <label for="radiosim">SIM</label> 
+                    <input type="radio" name="radiosimnao" id="radiosim"> 
+                    <label for="radionao">NÃO</label>   
+                    <input type="radio" name="radiosimnao" id="radionao"></p>
+
+                    <input type="range">
+                    <br>
+                    <br>
+                    <input type="text" placeholder="Digite seu nome" required>
+                    <input type="number" placeholder="Digite um numero" value="0" min="0" max="100" required>
+                    <input type="email" placeholder="Digite um email" required>
+                    <input type="password" placeholder="Digite sua senha" required>
+
+                    <button type="submit"> Enviar </button>
+                    <button type="reset"> Reset </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p> Desenvolvido por: </p>
+    </footer>
+</body>
+
+</html>

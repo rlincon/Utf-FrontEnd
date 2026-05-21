@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Buhid&family=Tac+One&display=swap');
+
+:root {
+    --cor-section: #e98888;
+    --font-padrao: "Noto Sans Buhid", "sans-serif";
+    --cor-botao: #72bedb;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: yellow;
+}
+
+h1:active {
+    color: var(--cor-section);
+}
+
+.subtitulo {
+    color: green;
+    display: inline;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#paragrafo{
+    width: 50%;
+    color: rgb(34, 67, 120);
+}
+
+#paragrafo::first-line {
+    font-size: 2rem;
+}
+
+section {
+    width: 80%;
+    background: var(--cor-section);
+    font-size: 16px;
+    font-family: var(--font-padrao);
+}
+
+#titulo2 {
+    font-size: 1rem;
+}
+
+input {
+    display: block;
+}
+
+main, footer, header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 30%;
+}
+
+button:hover {
+    background: var(--cor-botao);
+}
+
+input:focus  {
+    border: solid 3px #72bedb;
+    outline: none;
+}
+
+input::placeholder {
+    background: var(--cor-botao);
+    color: red;
+}
+
+h3::after {
+    content: " programadores!";
+}
+
+
+@media (max-width: 600px){
+    body {
+        background: blue;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 700px){
+    body {
+        background: yellow;
+    }
+}
+
+@media (max-width: 700px) and (min-width: 600px) {
+    body {
+        background: green;
+    }
+}
