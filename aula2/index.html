@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <!-- Define o tipo de documento e a linguagem como português do Brasil -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Define o padrão de caracteres (UTF-8 cobre acentuação, cedilha etc.) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ajusta a visualização em dispositivos móveis -->
+    <title>EcoCalculator</title>
+    <!-- Título que aparece na aba do navegador -->
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Importa o arquivo CSS externo para estilizar a página -->
+  </head>
+  <body>
+    <!-- Cabeçalho da página -->
+    <header>
+      <h1>
+        <a href="#">
+          <!-- Logo do projeto -->
+          <img
+            id="logo-img"
+            src="logo_ecocalculator.png"
+            alt="ícone de pegada ecológica"
+          />
+        </a>
+      </h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <div class="conteudo-principal">
+        <div class="enunciado-principal">
+          <!-- Input do tipo range (barra deslizante de 0 a 100) -->
+          <input
+            type="range"
+            id="input-range"
+            name="input-range"
+            min="0"
+            max="100"
+          />
+          <!-- Label que mostrará o valor atual do range -->
+          <label id="lenRange" for="input-range"></label>
+
+          <!-- Botões de opção (radio) para escolha entre "Sim" ou "Não" -->
+          <input type="radio" id="radio-sim" name="radio" checked />
+          <label id="label-radio-sim" for="radio-sim">Sim</label>
+
+          <input type="radio" id="radio-nao" name="radio" />
+          <label id="label-radio-nao" for="radio-nao">Não</label>
+
+          <!-- Imagem decorativa do planeta -->
+          <img class="img-planeta" src="img/logo_planetas.png" />
+
+          <!-- Parágrafo vazio onde será exibida a quantidade de planetas calculada -->
+          <p class="qtd-planetas"></p>
+        </div>
+
+        <!-- Botão que provavelmente inicia o cálculo ou a lógica principal -->
+        <button class="botao-principal">Iniciar</button>
+      </div>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+      <p>
+        Calculadora inspirada em
+        <a href="https://www.footprintcalculator.org/home/en" target="_blank">
+          FootPrint Calculator
+        </a>
+      </p>
+    </footer>
+
+    <!-- Importa o arquivo JavaScript com a lógica da aplicação -->
+    <script src="main.js"></script>
+  </body>
+</html>
